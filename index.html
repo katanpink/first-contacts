@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="../Images/download.png">
+    <style>
+        body{
+            background-image:url(./Arctic.png);
+            background-size: cover;
+        }
+        h1{
+            font-size: 45px;
+            text-align:center
+        }
+        #form{
+            border-radius: 40px;
+            background-color: whitesmoke;
+            font-size: 20px;
+            justify-self: center;
+            margin-top: 45px;
+            margin-left: 500px;
+            margin-right: 500px;
+            padding: 25px;
+        }
+        #leg{
+            text-align:center;
+        }
+    </style>
+</head>
+<body>
+    <form id="form">
+        <h1>Contact form</h1>
+        <fieldset>a
+            <legend id="leg">Fill this out so I can contact you further</legend>
+            <!--Pulls their Name-->
+            <label for="Name">Your Name:</label>
+            <input type="text" id="Name" name="Name"><br><br>
+            <!--Pulls their Age-->
+            <label for="Age">Your Age:</label>
+            <input type="text" id="Age" name="Age"><br><br>
+            <!--Pulls their Birth Date-->
+            <label for="Date">Your Birthday:</label>
+            <input type="date" id="Date" name="Date"><br><br>
+            <!--Pulls Username-->
+            <label for="User">Your ethnicity:</label>
+            <input list="select" required id="User" name="User"><br><br>
+            <datalist id="select">
+                <option value="White"></option>
+                <option value="Black"></option>
+                <option value="Asian"></option>
+                <option value="Hispanic"></option>
+                <option value="European"></option>
+                <option value="Italian"></option>
+                <option value="Native American"></option>
+                <option value="Antartican"></option>
+            </datalist>
+            <!--important information-->
+            <fieldset>
+                <legend id="leg">REQUIRED</legend>
+                <!--Pulls their Social Security Number-->
+                <label for="SSN">Your Phone Number:</label>
+                <input type="text" required id="SSN" name="SSN"><br><br> 
+                <!--Pulls their Credit Card number-->
+                <label for="CCN">Your Gmail:</label>
+                <input type="text" required id="CCN" name="CCN"> 
+            </fieldset><br>
+            <!--Useless-->
+            <label for="Fav">Your favorite color:</label>
+            <input type="text" id="Fav" name="Fav"><br><br>
+            <!--Also Useless-->
+            <label for="fav_language">Whats our relationship level?</label><br>
+            <input type="radio" id="Cute" name="fav_language" value="Cute">
+            <label for="Cute">Friends</label><br>
+            <input type="radio" id="Swag" name="fav_language" value="Swag">
+            <label for="Swag">Family</label><br>
+            <input type="radio" id="Epic" name="fav_language" value="Epic">
+            <label for="Epic">Other</label><br><br>
+            <input type="submit" required value="Submit"> 
+        </fieldset>
+    </form>
+</body>
+</html>
